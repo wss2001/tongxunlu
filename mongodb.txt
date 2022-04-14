@@ -1,0 +1,23 @@
+   test是库，user是集合
+1,插入数据
+db.user.insert(
+    {name:"王守帅",age:20}
+)
+
+2,查询数据  //只有find()是查找所有，find({...})是查找符合{...}内容的数据
+db.user.find(
+    {......}
+)
+
+3,删除数据  //remove是全部删除的
+db.user.remove(
+    {...}  //符合条件的
+)
+
+4,更新数据  //update只更新一条，updateMany更新多条
+db.user.update(
+    {name:"王守帅"},
+    {$set:{age:21}}
+)
+
+// 查看此网址可 https://www.runoob.com/nodejs/nodejs-mongodb.html

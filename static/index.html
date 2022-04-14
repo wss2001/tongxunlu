@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        #btn {
+            width: 250px;
+            height: 50px;
+            background-color: rgb(58, 132, 216);
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .d1 {
+            width: 250px;
+            height: 200px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <form action="/login" method="post">
+            <div>
+                账号：<input type="text" name="username">
+            </div>
+            <div>
+                密码：<input type="password" name="password">
+            </div>
+            <a href="./index2.html">没有账户？新用户注册</a>
+            <br>
+            <button type="submit" id="btn">登录</button>
+        </form>
+    </div>
+    <h1>修改密码</h1>
+    <form action="/change" method="post">
+        <div>
+            账号：<input type="text" name="username">
+        </div>
+        <div>
+            旧密码：<input type="password" name="oldPassword">
+        </div>
+        <div>
+            新密码：<input type="password" name="newPassword">
+        </div>
+        <button type="submit">确认</button>
+    </form>
+</body>
+
+</html>
