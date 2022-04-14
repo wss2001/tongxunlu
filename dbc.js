@@ -52,6 +52,6 @@ var mongoControl=function(dbName,tableName){
     }
 }
 
-// 导出去
+// 导出去，es5封装
 exports.mongoControl=mongoControl
 
